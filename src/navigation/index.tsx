@@ -16,7 +16,7 @@ import ModalScreen from '../screens/ModalScreen';
 import NotFoundScreen from '../screens/NotFoundScreen';
 import Vacinas from '../screens/Vacinas';
 import Inicio from '../screens/Inicio';
-import { RootStackParamList, RootTabParamList, RootTabScreenProps } from '../types';
+import { RootStackParamList, RootTabParamList, RootTabScreenProps } from '../../types';
 import LinkingConfiguration from './LinkingConfiguration';
 
 export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeName }) {
@@ -59,6 +59,7 @@ function BottomTabNavigator() {
   return (
     <BottomTab.Navigator
       initialRouteName="Inicio"
+      
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme].tint,
       }}>
@@ -66,8 +67,10 @@ function BottomTabNavigator() {
       <BottomTab.Screen
         name="Inicio"
         component={Inicio}
+        
         options={{
           title: 'Início',
+            
           tabBarIcon: ({ color }) => <TabBarIcon name="book" color={color} />,
         }}
       />
