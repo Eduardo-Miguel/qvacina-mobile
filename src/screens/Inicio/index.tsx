@@ -7,7 +7,7 @@ const Inicio : React.FC = () => {
   return (
     <Container>
       <Main>
-        <Titulo> Bem Vindo(a) ao </Titulo>
+        <Titulo> Bem Vindo(a) ao</Titulo>
         <Image source={logo}/>
         <BotaoAcessar>
           <TextoBotaoAcessar>Acessar</TextoBotaoAcessar>
