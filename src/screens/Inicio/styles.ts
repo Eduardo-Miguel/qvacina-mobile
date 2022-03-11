@@ -13,7 +13,6 @@ export const TextoRodape = styled.Text`
 
 export const Container = styled.View`
   flex: 1;
-  background-color:#fff;
 `;
 
 export const Main = styled.View`
