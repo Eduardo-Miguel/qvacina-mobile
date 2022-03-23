@@ -16,7 +16,7 @@ declare global {
 export type RootStackParamList = {
   Inicio: undefined;
   Vacinas: undefined;
-  Detalhe: undefined;
+  Detalhe: any;
 };
 
 export type RootStackScreenProps<Screen extends keyof RootStackParamList> = NativeStackScreenProps<
